@@ -1,0 +1,31 @@
+/* This CSS file will need to be added to the styling of 
+your web pages for the styles to be rendered. */
+
+body,html {
+background-image: url("https://wallpapercave.com/wp/wp5578100.png");
+color: black;
+ height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+    color: #ffc107;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  color: white;
+  background-image: url("https://i.pinimg.com/564x/06/6c/7a/066c7acda8e46d8b7e3637c01c7197d4.jpg");
+}
+
+.space-above {
+    margin-top: 20px;
+    padding-top: 20px;
+}
