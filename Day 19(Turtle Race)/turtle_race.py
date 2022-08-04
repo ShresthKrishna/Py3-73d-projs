@@ -5,7 +5,7 @@ import random
 screen = Screen()
 screen.setup(width=500, height=400)
 race_on = False
-user_bet = screen.textinput(title="MAke BEts Dannasama", prompt="Which kachua will win?")
+user_bet = screen.textinput(title="MAke Bets", prompt="Which Turtle will win?")
 color = ["red", "orange", "yellow", "green", "blue", "purple"]
 x = -230
 y = -70
@@ -28,9 +28,9 @@ while race_on:
             race_on = False
             winning_col = j.pencolor()
             if winning_col == user_bet:
-                print(f"Tum ssattebazi jeet gaye {winning_col} jeeta hai")
+                print(f"You won, {winning_col} turtle is the winner")
             else:
-                print(f"Aaj se tumhari biwi hamari hui {winning_col} mard nikla")
+                print(f"You lost {winning_col} turtle won")
         rand_dist = random.randint(0, 10)
         j.forward(rand_dist)
 
