@@ -8,7 +8,7 @@ from score import ScoreBoard
 screen = Screen()
 screen.setup(width=600, height=600)
 screen.bgcolor("black")
-screen.title("My snake game")
+screen.title("Snake Xeria")
 screen.tracer(0)    #to turn of the tracer
 # turtle.Turtle
 # square_1=turtle.Turtle(shape="square")
@@ -54,15 +54,5 @@ while game_is_on:
         if snake.head.distance(segment) < 10:
             # game_is_on = False
             score.highs()
-
-
-
-
-
-
-
-
-
-
 
 screen.exitonclick()
