@@ -1,12 +1,12 @@
-
 import pandas
 import smtplib
 import random
 import datetime as dt
+import os
 
 details = pandas.read_csv("birthdays.csv")
-my_email = 'deepthroat2580@gmail.com'
-password = 'incrediblehulk2'
+my_email = os.environ['FUN_MAIL']
+password = os.environ['PASS']
 date = dt.datetime.now()
 day_val = date.day
 month_val = date.month
