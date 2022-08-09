@@ -34,7 +34,7 @@ for i in dob:
         with smtplib.SMTP("smtp.gmail.com", port=587) as connection:
             connection.starttls()
             connection.login(user=my_email, password=password)
-            connection.sendmail(from_addr=my_email, to_addrs=i['email'], msg=f"Subject: Happy Birthday \n\n{wish}")
+            connection.sendmail(from_addr=my_email, to_addrs='eshansinha2002@gmail.com', msg=f"Subject: Happy Birthday \n\n{wish}")
 
 
 
